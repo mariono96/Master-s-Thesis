@@ -749,6 +749,32 @@ The work was implemented in Python using Carmenta Engine to process the 3D model
 \subsubsection{Datasets}
 For this report, four datasets coming from three different providers were used. Bastia and Paris datasets were generated using Acute3D and aerial mapping technology by Ubick \parencite{acute3D}. Marseille dataset was generated using Pixel Factory \parencite{pixel_factory}, a Data Management and Processing Software by Airbus. Finally, Helsinki dataset is an open source 3D city model of Finland's capital \parencite{helsinki}. \\
 In terms of quality of reconstruction, based on average size of triangles and overall aspect, Marseille and Helsinki datasets have finer resolutions than Paris and Bastia. 
+
+
+Bastia:  \\ 
+860.468831999749  x  333.57112799991387 \\
+481442 \\
+edge length DescribeResult(nobs=1444326, minmax=(0.0, 80.21069222735858), mean=2.8787873645898996, variance=4.522909319961517, skewness=6.810904169096826, kurtosis=145.58510413988859) \\ 
+area DescribeResult(nobs=481442, minmax=(3.9519004981862886e-07, 2159.113113446979), mean=4.652083846016285, variance=197.99970316784353, skewness=76.13491963092542, kurtosis=8258.515873876877) \\ 
+
+Paris: \\
+1160.492832000234  x  1531.6114079999877 \\
+triangles 809944 \\
+edge length DescribeResult(nobs=2429832, minmax=(0.0, 47.251425108869384), mean=3.9626740907233358, variance=6.656769851824518, skewness=1.6776100558389642, kurtosis=6.3174207941997995) \\
+area DescribeResult(nobs=809944, minmax=(0.0, 457.50438867621426), mean=8.398322162233178, variance=76.04644604507321, skewness=5.742085123391964, kurtosis=80.62966547648544) \\
+
+Marseille:\\
+300.00000000027626  x  299.99999999998016\\
+#triangles 680066\\
+edge length DescribeResult(nobs=2040198, minmax=(0.0, 44.08119589229242), mean=1.2057578570609833, variance=0.6509172272590844, skewness=2.8626636814756656, kurtosis=34.66285115264432)\\
+area DescribeResult(nobs=680066, minmax=(1.6813981359713774e-06, 183.81996745827425), mean=0.8215729569809125, variance=1.4701510973311573, skewness=25.212388396692624, kurtosis=2323.0508383024344)\\
+
+Helsinki:\\
+300.00000000027626  x  299.9999999998815\\
+#triangles 361737\\
+edge length DescribeResult(nobs=1085211, minmax=(2.5265762815251946e-08, 10.656968228647651), mean=0.962945906530619, variance=0.7796863092502593, skewness=2.293563171981586, kurtosis=9.972887521953911)\\
+area DescribeResult(nobs=361737, minmax=(1.1864341106589077e-13, 23.04893643923457), mean=0.40522648700475783, variance=0.5341183156762915, skewness=8.314263894652756, kurtosis=134.32079629247903)\\
+
 \subsubsection{Evaluation}
 The results are examined through visual inspection mostly. The background section on metrics for mesh segmentation presents several metrics, however these can not be meaningfully used without any ground-truth. In such cases, visual inspection of the results remains the dominating criterion of evaluation.  
 \section{Elevation images and mathematical morphology}
